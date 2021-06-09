@@ -1,0 +1,28 @@
+## Loconotion Site Configuration File ##
+# full .toml configuration example file to showcase all of Loconotion's available settings
+# check out https://github.com/toml-lang/toml for more info on the toml format
+
+# name of the folder that the site will be generated in
+name = "tp-otc"
+
+# the notion.so page to being parsing from. This page will become the index.html
+# of the generated site, and loconotation will parse all sub-pages present on the page
+page = "https://www.notion.so/TP-s-Optimisations-a928d9f0b89d40caae080dea50ee5708"
+
+theme = "dark"
+
+## Global Site Settings ##
+# this [site] table defines override settings for the whole site
+# later on we will see how to define settings for a single page
+[site]
+  ## Custom Meta Tags ##
+  # defined as an array of tables (double square brackets)
+  # each key in the table maps to an atttribute in the tag
+  # the following adds the tag <meta name="title" content="Loconotion Test Site"/>
+  [[site.meta]]
+  name = "title"
+  content = "TP's - OTC"
+  [[site.meta]]
+  name = "description"
+  content = "TP's optimisations réalisé dans le cadre du module Optimisation et Transformation de Codes."
+
