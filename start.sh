@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo python3 loconotion example/$1.toml
+sudo python3 loconotion example/$1.toml --clean
